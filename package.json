@@ -1,0 +1,25 @@
+{
+  "name": "cordova-iot-video-plugin",
+  "version": "0.1.0",
+  "description": "Chinamobile Iot Video Plugin For Cordova",
+  "cordova": {
+    "id": "cordova-iot-video-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagao0o/cordova-iot-video-plugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "luyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagao0o/cordova-iot-video-plugin/issues"
+  },
+  "homepage": "https://github.com/yagao0o/cordova-iot-video-plugin#readme"
+}

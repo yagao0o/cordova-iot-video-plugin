@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-iot-video-plugin" version="0.1" 
+  xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>CordovaIotVideoPlugin</name>
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <js-module name="CordovaIotVideoPlugin" src="www/CordovaIotVideoPlugin.js">
+    <clobbers target="window.CordovaIotVideoPlugin" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="CordovaIotVideoPlugin">
+        <param name="android-package" value="cordova.iot.video.plugin.CordovaIotVideoPlugin" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/CordovaIotVideoPlugin.java" target-dir="src/cordova/iot/video/plugin" />
+    <source-file src="src/android/ServerConfig.java" target-dir="src/cordova/iot/video/plugin" />
+  </platform>
+</plugin>
