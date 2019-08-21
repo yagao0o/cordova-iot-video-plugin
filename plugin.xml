@@ -20,6 +20,7 @@
     <resource-file src="src/android/libs/IMKit-release.aar" target="libs/IMKit-release.aar" />
     <resource-file src="src/android/libs/IMLibNew-release.aar" target="libs/IMLibNew-release.aar" />
     <resource-file src="src/android/libs/zzskit-release.aar" target="libs/zzskit-release.aar" />
+    <resource-file src="src/android/province.json" target="assets/province.json" />
     <source-file src="src/android/CordovaIotVideoPlugin.java" target-dir="src/cordova/iot/video/plugin" />
   </platform>
 </plugin>
