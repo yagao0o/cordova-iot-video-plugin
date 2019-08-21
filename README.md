@@ -5,6 +5,10 @@
 
 cordova plugin add https://github.com/yagao0o/cordova-iot-video-plugin
 
+# Ionic-Native
+
+使用 ``ionic`` 可使用 ``@ionic-native`` 扩展：参考[ionic-native-iot-video](https://github.com/yagao0o/cordova-iot-video-plugin)
+
 # 卸载
 
 cordova plugin remove cordova-iot-video-plugin
@@ -62,56 +66,3 @@ CordovaIotVideoPlugin.joinRoom
 - roomId: 房间号
 - userId: 当前用户Id
 
-
-# Ionic 
-
-前端使用 ionic 框架时，可使用提供的ionic包
-添加依赖：复制``cordova-iot-video-plugin/@ionic-native/iot-video`` 到``node_modules/@ionic-native/iot-video``
-
-## Ionic包用法
-
-```Typescript
-// 
-import { IotVideo } from '@ionic-native/iot-video/ngx';
-
-constructor(private iotVideo: IotVideo) { }
-// coolMethod
-this.iot.coolMethod('hehe').then(
-  success => {
-    console.log(success);
-  },
-  err => {
-    console.log(err);
-  }
-);
-
-
-// initClient
-const config = {
-  imAppKey: 'appKey', //AppKey
-  imNavServer: 'https://ip:port', //修改为对应的IP+端口
-  rtcAppId: '',
-  rtcCmpServer: '',
-  rtcToken: '',
-  baseUrl: 'https://ip:port', //修改为对应的IP+端口
-  fileServer: 'https://ip:port'  //修改为对应的IP+端口
-};
-this.iot.initClient(JSON.stringify(config)).then(
-  success => {
-    console.log(success);
-  },
-  error => {
-    console.log(error);
-  }
-);
-
-// joinRoom
-this.iot.joinRoom(this.userId,this.roomId,this.userAccount).then(
-  success => {
-    console.log(success);
-  },
-  error => {
-    console.log(error);
-  }
-);
-```
