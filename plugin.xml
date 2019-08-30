@@ -15,7 +15,12 @@
         <param name="android-package" value="cordova.iot.video.plugin.CordovaIotVideoPlugin" />
       </feature>
     </config-file>
-    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+			<intent-filter>
+				<action android:name="com.inspur.zsyw.APP" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</config-file>
     <framework src="src/android/iot-video.gradle" custom="true" type="gradleReference" />
     <resource-file src="src/android/libs/IMKit-release.aar" target="libs/IMKit-release.aar" />
     <resource-file src="src/android/libs/IMLibNew-release.aar" target="libs/IMLibNew-release.aar" />
