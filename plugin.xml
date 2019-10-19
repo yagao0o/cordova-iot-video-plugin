@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-iot-video-plugin" version="0.1" 
+<plugin id="cordova-iot-video-plugin" version="0.2" 
   xmlns="http://apache.org/cordova/ns/plugins/1.0" 
   xmlns:android="http://schemas.android.com/apk/res/android">
   <name>CordovaIotVideoPlugin</name>
@@ -22,10 +22,9 @@
 			</intent-filter>
 		</config-file>
     <framework src="src/android/iot-video.gradle" custom="true" type="gradleReference" />
-    <resource-file src="src/android/libs/IMKit-release.aar" target="libs/IMKit-release.aar" />
-    <resource-file src="src/android/libs/IMLibNew-release.aar" target="libs/IMLibNew-release.aar" />
-    <resource-file src="src/android/libs/zzskit-release.aar" target="libs/zzskit-release.aar" />
+    <resource-file src="src/android/libs/zzskit.aar" target="libs/zzskit.aar" />
     <resource-file src="src/android/province.json" target="assets/province.json" />
+    <resource-file src="src/android/rc_file_path.xml" target="res/xml/rc_file_path.xml" />
     <source-file src="src/android/CordovaIotVideoPlugin.java" target-dir="src/cordova/iot/video/plugin" />
   </platform>
 </plugin>
