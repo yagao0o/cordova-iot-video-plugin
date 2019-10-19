@@ -23,6 +23,8 @@
 		</config-file>
     <framework src="src/android/iot-video.gradle" custom="true" type="gradleReference" />
     <resource-file src="src/android/libs/zzskit.aar" target="libs/zzskit.aar" />
+    <resource-file src="src/android/libs/IMKit.aar" target="libs/IMKit.aar" />
+    <resource-file src="src/android/libs/IMLib.aar" target="libs/IMLib.aar" />
     <resource-file src="src/android/province.json" target="assets/province.json" />
     <resource-file src="src/android/rc_file_path.xml" target="res/xml/rc_file_path.xml" />
     <source-file src="src/android/CordovaIotVideoPlugin.java" target-dir="src/cordova/iot/video/plugin" />
